@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>home</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="home.css">
+</head>
+<body>
+	<div class="screen">
+		<div class="sidebar">
+			<p>U</p><p>I</p><p>G</p><p>A</p><p>H</p>
+		</div>
+		<div class="intro">
+			<div class="title">WHO I</div>
+			<div class="content">
+				<p>你好，我叫 谢婉玉</p>
+				<p>是个 会写文档 会撸代码 的 UI设计</p>
+				<p>喜欢 绘画 和 游戏 </p>
+				<p>这里是我的部分作品</p>
+			</div>
+		</div>
+		<div class="works">
+			<div class="column">
+				<div class="card"
+				 onclick="handleView('U', 'GameAssist 桌游助手', './img/GameAssistDetail.jpg')">
+					<div class="thumb"><img src="./img/GameAssist.jpg"></div>
+					<div class="desc">
+						<div class="sign">U</div>
+						<div class="text">GameAssist 桌游助手</div>
+					</div>
+				</div>
+				<div class="card"
+				 onclick="handleView('U', '前端组件', './img/HrpUIDetail.jpg')">
+					<div class="thumb"><img src="./img/HrpUI.jpg"></div>
+					<div class="desc">
+						<div class="sign">U</div>
+						<div class="text">前端组件</div>
+					</div>
+				</div>
+				<div class="card"
+				 onclick="handleView('G', '事务所LOGO', './img/HaozeLogoDetail.jpg')">
+					<div class="thumb"><img src="./img/HaozeLogo.jpg"></div>
+					<div class="desc">
+						<div class="sign">G</div>
+						<div class="text">事务所LOGO</div>
+					</div>
+				</div>
+				<div class="card"
+				 onclick="handleView('U', 'Weather 天气助手', './img/WeatherDetail.jpg')">
+					<div class="thumb"><img src="./img/Weather.jpg"></div>
+					<div class="desc">
+						<div class="sign">U</div>
+						<div class="text">Weather 天气助手</div>
+					</div>
+				</div>
+				<div class="card"
+				 onclick="handleView('I', '常用图标', './img/ComIconsDetail.png')">
+					<div class="thumb"><img src="./img/ComIcons.png"></div>
+					<div class="desc">
+						<div class="sign">I</div>
+						<div class="text">常用图标</div>
+					</div>
+				</div>
+				<div class="card"
+				 onclick="handleView('U', '惠众健康APP', './img/HuizhongDetail.jpg')">
+					<div class="thumb"><img src="./img/Huizhong.jpg"></div>
+					<div class="desc">
+						<div class="sign">U</div>
+						<div class="text">惠众健康APP</div>
+					</div>
+				</div>
+			</div>
+			<div class="column">
+				<div class="card"
+				 onclick="handleView('H', '临摹手绘', './img/Arilia.jpg')">
+					<div class="thumb"><img src="./img/Arilia.jpg"></div>
+					<div class="desc">
+						<div class="sign">H</div>
+						<div class="text">临摹手绘</div>
+					</div>
+				</div>
+				<div class="card"
+				 onclick="handleView('U', '事务所网站', './img/HaozeDetail.jpg', 'http://haozelaw.com')">
+					<div class="thumb"><img src="./img/Haoze.jpg"></div>
+					<div class="desc">
+						<div class="sign">U</div>
+						<div class="text">事务所网站</div>
+					</div>
+				</div>
+				<div class="card"
+				 onclick="handleView('U', '合同报账APP', './img/H&BDetail.jpg')">
+					<div class="thumb"><img src="./img/H&B.jpg"></div>
+					<div class="desc">
+						<div class="sign">U</div>
+						<div class="text">合同报账APP</div>
+					</div>
+				</div>
+				<div class="card"
+				 onclick="handleView('G', '自助终端广告屏', './img/AdvertisingScreenDetail.jpg')">
+					<div class="thumb"><img src="./img/AdvertisingScreen.jpg"></div>
+					<div class="desc">
+						<div class="sign">G</div>
+						<div class="text">自助终端广告屏</div>
+					</div>
+				</div>
+				<div class="card"
+				 onclick="handleView('G', '企业LOGO', './img/CJLogoDetail.jpg')">
+					<div class="thumb"><img src="./img/CJLogo.jpg"></div>
+					<div class="desc">
+						<div class="sign">G</div>
+						<div class="text">企业LOGO</div>
+					</div>
+				</div>
+				<div class="card"
+				 onclick="handleView('G', '如果有空PPT设计', './img/PlanPPTDetail.jpg')">
+					<div class="thumb"><img src="./img/PlanPPT.jpg"></div>
+					<div class="desc">
+						<div class="sign">G</div>
+						<div class="text">如果有空PPT设计</div>
+					</div>
+				</div>
+				<div class="card"
+				 onclick="handleView('A', 'MG动画练习', './img/MGAnimate.gif')">
+					<div class="thumb"><img src="./img/MGAnimate.gif"></div>
+					<div class="desc">
+						<div class="sign">A</div>
+						<div class="text">MG动画练习</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="mask" class="mask">
+		<div class="content">
+			<div class="titcont">
+				<div id="sign" class="sign">U</div>
+				<div id="text" class="text">GameAssist 桌游助手</div>
+				<a id="link" class="link" href="javascript:;" target="_blank">项目演示</a>
+				<div class="close" onclick="handleClose()">
+					<svg id="icon-close" viewBox="0 0 1024 1024">
+						<path d="M556.5 512l190.9-190.9c12.3-12.3 12.3-32.2 0-44.5-12.3-12.3-32.2-12.3-44.5 0L512 467.5l-190.9-191c-12.3-12.3-32.2-12.3-44.5 0-12.3 12.3-12.3 32.2 0 44.5l190.9 191-191 190.9c-12.3 12.3-12.3 32.2 0 44.5 12.3 12.3 32.2 12.3 44.5 0l191-190.9 190.9 190.9c12.3 12.3 32.2 12.3 44.5 0 12.3-12.3 12.3-32.2 0-44.5L556.5 512z"></path>
+					</svg>
+				</div>
+			</div>
+			<div class="viewcont">
+				<div class="board">
+					<img id="view" src="./img/GameAssistDetail.jpg">
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script type="text/javascript">
+	// 打开画板
+	function handleView(sign, name, view, link) {
+		// console.log(view, link);
+		document.getElementById('sign').innerHTML = sign;
+		document.getElementById('text').innerHTML = name;
+		document.getElementById('view').src = view;
+		if (link) {
+			document.getElementById('link').href = link;
+			document.getElementById('link').style.display = 'block';
+		} else {
+			document.getElementById('link').style.display = 'none';
+		}
+		document.getElementById('mask').classList.add('open');
+	}
+	// 关闭画板
+	function handleClose() {
+		document.getElementById('mask').classList.remove('open');
+	}
+</script>
+
+</html>
