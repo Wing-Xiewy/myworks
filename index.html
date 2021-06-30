@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="home.css">
 </head>
 <body>
-	<div class="screen">
+	<div id="screen" class="screen">
 		<div class="sidebar">
 			<p>U</p><p>I</p><p>G</p><p>A</p><p>H</p>
 		</div>
@@ -164,14 +164,18 @@
 		if (link) {
 			document.getElementById('link').href = link;
 			document.getElementById('link').style.display = 'block';
-		} else {
-			document.getElementById('link').style.display = 'none';
 		}
 		document.getElementById('mask').classList.add('open');
+		document.getElementById('screen').classList.add('open');
 	}
 	// 关闭画板
 	function handleClose() {
 		document.getElementById('mask').classList.remove('open');
+		document.getElementById('screen').classList.remove('open');
+		document.getElementById('sign').innerHTML = '';
+		document.getElementById('text').innerHTML = '';
+		document.getElementById('view').src = '';
+		document.getElementById('link').style.display = 'none';
 	}
 </script>
 

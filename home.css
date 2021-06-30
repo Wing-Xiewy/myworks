@@ -141,7 +141,7 @@ li { list-style: none; }
 	flex-wrap: wrap;
 	opacity: 0;
 	z-index: -1;
-	transition: all 0.2s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 .mask.open {
 	opacity: 1;
@@ -155,7 +155,7 @@ li { list-style: none; }
 	margin: auto;
 	background-color: white;
 	transform: translateY(20%);
-	transition: all 0.2s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 .mask.open .content {
 	transform: translateY(0);
@@ -188,7 +188,7 @@ li { list-style: none; }
 }
 .mask .content .titcont .link {
 	position: relative;
-	display: block;
+	display: none;
 	font-size: 1.8vw;
 	color: #42a5bd;
 	text-decoration: underline;
@@ -229,6 +229,9 @@ li { list-style: none; }
 		flex-flow: column nowrap;
 		align-items: center;
 		overflow-y: auto;
+	}
+	.screen.open {
+		overflow-y: hidden;
 	}
 	.sidebar {
 		display: none;
@@ -274,7 +277,7 @@ li { list-style: none; }
 		font-size: 1.2vw;
 	}
 	.mask .content .titcont .sign {
-		font-size: 2.4vw;
+		font-size: 3.4vw;
 		padding: 0 1.2vw;
 		border-radius: 1.8vw;
 		margin-right: 1.8vw;
