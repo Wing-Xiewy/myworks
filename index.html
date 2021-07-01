@@ -155,28 +155,56 @@
 </body>
 
 <script type="text/javascript">
+	var $sign = document.getElementById('sign');
+	var $text = document.getElementById('text');
+	var $view = document.getElementById('view');
+	var $link = document.getElementById('link');
+	var $mask = document.getElementById('mask');
+	var $screen = document.getElementById('screen');
 	// 打开画板
 	function handleView(sign, name, view, link) {
 		// console.log(view, link);
-		document.getElementById('sign').innerHTML = sign;
-		document.getElementById('text').innerHTML = name;
-		document.getElementById('view').src = view;
+		$sign.innerHTML = sign;
+		$text.innerHTML = name;
+		$view.src = view;
 		if (link) {
-			document.getElementById('link').href = link;
-			document.getElementById('link').style.display = 'block';
+			$link.href = link;
+			$link.style.display = 'block';
 		}
-		document.getElementById('mask').classList.add('open');
-		document.getElementById('screen').classList.add('open');
+		$mask.classList.add('open');
+		$screen.classList.add('open');
 	}
 	// 关闭画板
 	function handleClose() {
-		document.getElementById('mask').classList.remove('open');
-		document.getElementById('screen').classList.remove('open');
-		document.getElementById('sign').innerHTML = '';
-		document.getElementById('text').innerHTML = '';
-		document.getElementById('view').src = '';
-		document.getElementById('link').style.display = 'none';
+		$mask.classList.remove('open');
+		$screen.classList.remove('open');
+		$sign.innerHTML = '';
+		$text.innerHTML = '';
+		$view.src = '';
+		$link.style.display = 'none';
 	}
+	// 打开画板
+	// function handleView(sign, name, view, link) {
+	// 	// console.log(view, link);
+	// 	document.getElementById('sign').innerHTML = sign;
+	// 	document.getElementById('text').innerHTML = name;
+	// 	document.getElementById('view').src = view;
+	// 	if (link) {
+	// 		document.getElementById('link').href = link;
+	// 		document.getElementById('link').style.display = 'block';
+	// 	}
+	// 	document.getElementById('mask').classList.add('open');
+	// 	document.getElementById('screen').classList.add('open');
+	// }
+	// 关闭画板
+	// function handleClose() {
+	// 	document.getElementById('mask').classList.remove('open');
+	// 	document.getElementById('screen').classList.remove('open');
+	// 	document.getElementById('sign').innerHTML = '';
+	// 	document.getElementById('text').innerHTML = '';
+	// 	document.getElementById('view').src = '';
+	// 	document.getElementById('link').style.display = 'none';
+	// }
 </script>
 
 </html>
