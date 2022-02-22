@@ -32,12 +32,36 @@
 						<div class="text">海报 BANNER</div>
 					</div>
 				</div>
-				<div class="card"
+				<!-- <div class="card"
 				 onclick="handleView('U', 'GameAssist 桌游助手', './img/GameAssistDetail.jpg', 'https://wing-xiewy.github.io/gameAssist/')">
 					<div class="thumb"><img src="./img/GameAssist.jpg"></div>
 					<div class="desc">
 						<div class="sign">U</div>
 						<div class="text">GameAssist 桌游助手</div>
+					</div>
+				</div> -->
+				<div class="card"
+				 onclick="handleView('U', 'Weather 天气助手', './img/WeatherDetail.jpg', 'https://wing-xiewy.github.io/weather/')">
+					<div class="thumb"><img src="./img/Weather.jpg"></div>
+					<div class="desc">
+						<div class="sign">U</div>
+						<div class="text">Weather 天气助手</div>
+					</div>
+				</div>
+				<div class="card"
+				 onclick="handleView('U', '惠众健康APP', './img/Huizhong2Detail.jpg')">
+					<div class="thumb"><img src="./img/Huizhong2.jpg"></div>
+					<div class="desc">
+						<div class="sign">U</div>
+						<div class="text">惠众健康APP</div>
+					</div>
+				</div>
+				<div class="card"
+				 onclick="handleView('U', '合同报账APP', './img/H&BDetail.jpg')">
+					<div class="thumb"><img src="./img/H&B.jpg"></div>
+					<div class="desc">
+						<div class="sign">U</div>
+						<div class="text">合同报账小程序</div>
 					</div>
 				</div>
 				<div class="card"
@@ -49,22 +73,6 @@
 					</div>
 				</div>
 				<div class="card"
-				 onclick="handleView('G', '事务所LOGO', './img/HaozeLogoDetail.jpg')">
-					<div class="thumb"><img src="./img/HaozeLogo.jpg"></div>
-					<div class="desc">
-						<div class="sign">G</div>
-						<div class="text">事务所LOGO</div>
-					</div>
-				</div>
-				<div class="card"
-				 onclick="handleView('U', 'Weather 天气助手', './img/WeatherDetail.jpg', 'https://wing-xiewy.github.io/weather/')">
-					<div class="thumb"><img src="./img/Weather.jpg"></div>
-					<div class="desc">
-						<div class="sign">U</div>
-						<div class="text">Weather 天气助手</div>
-					</div>
-				</div>
-				<div class="card"
 				 onclick="handleView('I', '常用字体图标', './img/ComIconsDetail.png')">
 					<div class="thumb"><img src="./img/ComIcons.png"></div>
 					<div class="desc">
@@ -72,22 +80,30 @@
 						<div class="text">常用字体图标</div>
 					</div>
 				</div>
-				<div class="card"
-				 onclick="handleView('U', '惠众健康APP', './img/HuizhongDetail.jpg')">
-					<div class="thumb"><img src="./img/Huizhong.jpg"></div>
-					<div class="desc">
-						<div class="sign">U</div>
-						<div class="text">惠众健康APP</div>
-					</div>
-				</div>
 			</div>
 			<div class="column">
 				<div class="card"
-				 onclick="handleView('H', '临摹手绘', './img/Arilia.jpg')">
+				 onclick="handleView('U', '医疗数据可视化', './img/HscreenDetail.png')">
+					<div class="thumb"><img src="./img/Hscreen.jpg"></div>
+					<div class="desc">
+						<div class="sign">U</div>
+						<div class="text">医疗数据可视化</div>
+					</div>
+				</div>
+				<div class="card"
+				 onclick="handleView('H', '临摹手绘和插画', './img/IllustrationDetail.jpg')">
 					<div class="thumb"><img src="./img/Arilia.jpg"></div>
 					<div class="desc">
 						<div class="sign">H</div>
-						<div class="text">临摹手绘</div>
+						<div class="text">临摹手绘和插画</div>
+					</div>
+				</div>
+				<div class="card"
+				 onclick="handleView('G', '自助终端广告屏', './img/AdvertisingScreenDetail.jpg')">
+					<div class="thumb"><img src="./img/AdvertisingScreen.jpg"></div>
+					<div class="desc">
+						<div class="sign">G</div>
+						<div class="text">自助终端广告屏</div>
 					</div>
 				</div>
 				<div class="card"
@@ -99,19 +115,11 @@
 					</div>
 				</div>
 				<div class="card"
-				 onclick="handleView('U', '合同报账APP', './img/H&BDetail.jpg')">
-					<div class="thumb"><img src="./img/H&B.jpg"></div>
-					<div class="desc">
-						<div class="sign">U</div>
-						<div class="text">合同报账APP</div>
-					</div>
-				</div>
-				<div class="card"
-				 onclick="handleView('G', '自助终端广告屏', './img/AdvertisingScreenDetail.jpg')">
-					<div class="thumb"><img src="./img/AdvertisingScreen.jpg"></div>
+				 onclick="handleView('G', '事务所LOGO', './img/HaozeLogoDetail.jpg')">
+					<div class="thumb"><img src="./img/HaozeLogo.jpg"></div>
 					<div class="desc">
 						<div class="sign">G</div>
-						<div class="text">自助终端广告屏</div>
+						<div class="text">事务所LOGO</div>
 					</div>
 				</div>
 				<div class="card"
@@ -146,7 +154,7 @@
 			<div class="titcont">
 				<div id="sign" class="sign">U</div>
 				<div id="text" class="text">GameAssist 桌游助手</div>
-				<a id="link" class="link" href="javascript:;" target="_blank">项目演示</a>
+				<a id="link" class="link" href="javascript:;" target="_blank">在线演示</a>
 				<div class="close" onclick="handleClose()">
 					<svg id="icon-close" viewBox="0 0 1024 1024">
 						<path d="M556.5 512l190.9-190.9c12.3-12.3 12.3-32.2 0-44.5-12.3-12.3-32.2-12.3-44.5 0L512 467.5l-190.9-191c-12.3-12.3-32.2-12.3-44.5 0-12.3 12.3-12.3 32.2 0 44.5l190.9 191-191 190.9c-12.3 12.3-12.3 32.2 0 44.5 12.3 12.3 32.2 12.3 44.5 0l191-190.9 190.9 190.9c12.3 12.3 32.2 12.3 44.5 0 12.3-12.3 12.3-32.2 0-44.5L556.5 512z"></path>
@@ -163,12 +171,12 @@
 </body>
 
 <script type="text/javascript">
-	var $sign = document.getElementById('sign');
-	var $text = document.getElementById('text');
-	var $view = document.getElementById('view');
-	var $link = document.getElementById('link');
-	var $mask = document.getElementById('mask');
-	var $screen = document.getElementById('screen');
+	var $sign = document.getElementById('sign'); // 画板上的作品类型对象
+	var $text = document.getElementById('text'); // 画板上的作品名称对象
+	var $view = document.getElementById('view'); // 画板上的作品详情图片对象
+	var $link = document.getElementById('link'); // 画板上的在线演示连接对象
+	var $mask = document.getElementById('mask'); // 画板的遮罩层对象
+	var $screen = document.getElementById('screen'); // 主界面部分
 	// 打开画板
 	function handleView(sign, name, view, link) {
 		// console.log(view, link);
@@ -191,28 +199,6 @@
 		$view.src = '';
 		$link.style.display = 'none';
 	}
-	// 打开画板
-	// function handleView(sign, name, view, link) {
-	// 	// console.log(view, link);
-	// 	document.getElementById('sign').innerHTML = sign;
-	// 	document.getElementById('text').innerHTML = name;
-	// 	document.getElementById('view').src = view;
-	// 	if (link) {
-	// 		document.getElementById('link').href = link;
-	// 		document.getElementById('link').style.display = 'block';
-	// 	}
-	// 	document.getElementById('mask').classList.add('open');
-	// 	document.getElementById('screen').classList.add('open');
-	// }
-	// 关闭画板
-	// function handleClose() {
-	// 	document.getElementById('mask').classList.remove('open');
-	// 	document.getElementById('screen').classList.remove('open');
-	// 	document.getElementById('sign').innerHTML = '';
-	// 	document.getElementById('text').innerHTML = '';
-	// 	document.getElementById('view').src = '';
-	// 	document.getElementById('link').style.display = 'none';
-	// }
 </script>
 
 </html>
